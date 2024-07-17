@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "sample-llm-transformers"
+version = "0.1.0"
+description = "Sample codes for LLM applications"
+authors = ["Ron Webb <ron@ronella.xyz>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.9.13"
+tensorflow = "~2.15.0"
+tensorflow-io = "~0.31.0"
+pyarrow = "~16.1.0"
+transformers = "~4.42.4"
+torch = "~2.3.1"
+datasets = "~2.20.0"
+sentencepiece = "~0.2.0"
+evaluate = "~0.4.2"
+nltk = "~3.8.1"
+rouge-score = "~0.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
