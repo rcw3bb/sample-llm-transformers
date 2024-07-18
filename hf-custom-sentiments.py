@@ -1,5 +1,5 @@
 import tensorflow as tf
-import tensorflow.keras as keras
+import tf_keras as keras
 import numpy as np
 
 from datasets import load_dataset, Dataset, DatasetDict

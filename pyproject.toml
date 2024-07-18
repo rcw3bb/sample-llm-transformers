@@ -6,17 +6,13 @@ authors = ["Ron Webb <ron@ronella.xyz>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "~3.9.13"
-tensorflow = "~2.15.0"
+python = "~3.10.0"
 tensorflow-io = "~0.31.0"
-pyarrow = "~16.1.0"
-transformers = "~4.42.4"
-torch = "~2.3.1"
-datasets = "~2.20.0"
-sentencepiece = "~0.2.0"
-evaluate = "~0.4.2"
-nltk = "~3.8.1"
-rouge-score = "~0.1.2"
+datasets = "^2.20.0"
+transformers = "^4.42.4"
+tensorflow-intel = "~2.16.0"
+tensorflow = "~2.16.0"
+tf-keras = "~2.16.0"
 
 [build-system]
 requires = ["poetry-core"]
