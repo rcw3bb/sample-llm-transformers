@@ -12,7 +12,7 @@ def main():
         The solar system is an amazing place, and we are still learning new things about it all the time. With continued exploration, we may one day find evidence of life beyond Earth.    
     """
 
-    quan_pipeline = pipeline("question-answering", model="deepset/minilm-uncased-squad2")
+    quan_pipeline = pipeline("question-answering", model="deepset/roberta-base-squad2")
     question = "What are the two regions in the solar system?"
     answer = quan_pipeline(question=question, context=context)
     print("Question: ", question)
