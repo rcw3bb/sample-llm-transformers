@@ -4,14 +4,17 @@
 
 This project demonstrates a sample project that utilizes a Large Language Model (LLM). The application uses Hugging Face models.
 
-This project consists of two main components:
+This project consists of four main components:
 
 1. **Sentiment Analysis**: A custom sentiment analysis model using the `DistilBERT` transformer model.
 2. **Text Generation**: A text generation pipeline using the `GPT-2` model.
+3. **Text Summarization**: A text summarization pipeline using the `T5` model.
+4. **Question Answering**: A question answering system using the `RoBERTa` model.
 
 ## Requirements
 
 - Python 3.10.x
+- Poetry
 
 ## Installation
 
@@ -69,3 +72,45 @@ The text generation component uses the `GPT-2` model to generate synthetic text 
 2. The script will:
     - Initialize the `GPT-2` text generation pipeline.
     - Generate synthetic text based on the provided prompt.
+
+## Text Summarization
+
+### Description
+
+The text summarization component uses the `T5` model to summarize long texts.
+
+### Files
+
+- `hf-text-summarization.py`: Contains the code for setting up the text summarization pipeline and summarizing text.
+
+### Usage
+
+1. Run the text summarization script:
+    ```sh
+    python hf-text-summarization.py
+    ```
+
+2. The script will:
+    - Initialize the `T5` text summarization pipeline.
+    - Summarize the provided text.
+
+## Question Answering
+
+### Description
+
+The question answering component uses the `RoBERTa` model to answer questions based on a given context.
+
+### Files
+
+- `hf-question-answering.py`: Contains the code for setting up the question answering pipeline and answering questions.
+
+### Usage
+
+1. Run the question answering script:
+    ```sh
+    python hf-question-answering.py
+    ```
+
+2. The script will:
+    - Initialize the `RoBERTa` question answering pipeline.
+    - Answer questions based on the provided context.
