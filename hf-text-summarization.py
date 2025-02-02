@@ -20,7 +20,6 @@ def check_and_download_nltk_data(dataset_name):
 
 def main() :
 
-    # Check if the 'punkt' dataset is downloaded
     check_and_download_nltk_data('punkt_tab')
 
     summarizer = pipeline("summarization", model=model)
