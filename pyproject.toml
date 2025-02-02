@@ -13,6 +13,7 @@ transformers = "^4.42.4"
 tensorflow-intel = "~2.16.0"
 tensorflow = "~2.16.0"
 tf-keras = "~2.16.0"
+truecase = "^0.0.14"
 
 [build-system]
 requires = ["poetry-core"]
