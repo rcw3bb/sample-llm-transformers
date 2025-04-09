@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Sample codes for LLM applications"
 authors = ["Ron Webb <ron@ronella.xyz>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "~3.10.0"
