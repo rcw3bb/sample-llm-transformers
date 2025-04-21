@@ -2,19 +2,18 @@
 
 ## Overview
 
-This project demonstrates a sample project that utilizes a Large Language Model (LLM). The application uses Hugging Face models.
+This project demonstrates a sample application that utilizes a Large Language Model (LLM). The application leverages Hugging Face models.
 
-This project consists of four main components:
+The project consists of four main components:
 
-1. **Sentiment Analysis**: A custom sentiment analysis model using the `DistilBERT` transformer model.
-2. **Text Generation**: A text generation pipeline using the `GPT-2` model.
-3. **Text Summarization**: A text summarization pipeline using the `T5` model.
-4. **Question Answering**: A question answering system using the `RoBERTa` model.
+1. **Sentiment Analysis**: A custom sentiment analysis model using the `DistilBERT` transformer.
+2. **Text Generation**: A text generation pipeline powered by the `GPT-2` model.
+3. **Text Summarization**: A text summarization pipeline utilizing the `T5` model.
+4. **Question Answering**: A question answering system based on the `RoBERTa` model.
 
 ## Requirements
 
-- Python 3.10.x
-- Poetry
+- Python 3.10 or higher
 
 ## Installation
 
@@ -24,10 +23,29 @@ This project consists of four main components:
     cd sample-llm-transformers
     ```
 
-2. Install the required packages:
-    ```sh
-    poetry install
-    ```
+2. Install the dependencies:
+
+   > If Poetry is not installed, use the following command to install it:
+   >
+   > ```sh
+   > python -m pip install poetry
+   > ```
+   > After installation, make `poetry` available to the `CLI` by updating the `PATH` environment variable. For **Windows**, include:
+   >
+   > ```sh
+   > %LOCALAPPDATA%\Programs\Python\<PYTHON_VERSION>\Scripts
+   > ```
+   > Replace **\<PYTHON_VERSION\>** with the directory containing the Python binaries for your version.
+   
+   > If your **system Python** version is not **Python 3.10**, use the following command to install it:
+   >
+   > ```sh
+   > poetry python install 3.10
+   > ```
+   
+   ```sh
+   poetry install
+   ```
 
 ## Sentiment Analysis
 
@@ -37,7 +55,7 @@ The sentiment analysis component uses the `DistilBERT` model to classify the sen
 
 ### Files
 
-- `hf-custom-sentiments.py`: Contains the code for loading the dataset, tokenizing, training the model, and making predictions.
+- `hf-custom-sentiments.py`: Contains the code for loading the dataset, tokenizing it, training the model, and making predictions.
 
 ### Usage
 
